@@ -488,6 +488,9 @@ footer {
 .tap-button:visited {
   color: #f7f7f7;
 }
+.tap-button:active {
+  color: #86B674;
+}
 /*:::: Smaller screens ::::*/
 .mobile-show {
   display: none;
