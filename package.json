@@ -1,14 +1,14 @@
 {
-  "name": "fractionless-boilerplate",
+  "name": "tap-tempo",
   "version": "3.2.0",
-  "description": "The HTML/CSS boilerplate you build up from, not tear down.",
+  "description": "A simple web app to tap out a tempo or find the BPMs of your favorite songs",
   "main": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/billpatrianakos/fractionless-boilerplate.git"
+    "url": "https://github.com/billpatrianakos/tap-tempo.git"
   },
   "keywords": [
     "HTML",
@@ -19,7 +19,7 @@
   "author": "Bill Patrianakos <bill@billpatrianakos.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/billpatrianakos/fractionless-boilerplate/issues"
+    "url": "https://github.com/billpatrianakos/tap-tempo/issues"
   },
   "homepage": "http://fractionless.info",
   "devDependencies": {
