@@ -11,29 +11,40 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- process:css css/style.css -->
-  <link rel="stylesheet" href="vendor/normalize-css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <!-- /process -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
 
   <!--[if lt IE 9]>
-  <script src="vendor/html5shiv/dist/html5shiv.min.js"></script>
-  <script src="vendor/respond/dest/respond.min.js"></script>
+  <script src="/vendor/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="/vendor/respond/dest/respond.min.js"></script>
   <![endif]-->
 </head>
 
 <body>
 
   <main class="container">
-    <!-- Content can go here -->
+    <section class="row-loose">
+      <div class="col-8 push-4">
+        <a href="#" role="button" class="tap-button">Tap Tempo</a>
+      </div>
+    </section>
   </main>
 
-  <!-- process:[src] //ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js -->
-  <script src="vendor/jquery/dist/jquery.min.js"></script>
-  <!-- /process -->
-  <!-- process:js js/scripts.js -->
-  <script src="js/scripts.js"></script>
-  <!-- /process -->
+  <footer class="container">
+    <div class="row-loose">
+      <div class="col-4">
+        <ul>
+          <li>
+            <a href="#" id="play" class="play-button"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-4"></div>
+      <div class="col-4"></div>
+    </div>
+  </footer>
 
+  <script src="/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="/js/scripts.js"></script>
 </body>
 </html>

@@ -29,6 +29,7 @@
     "jquery": "~2.1.4",
     "normalize-css": "~3.0.3",
     "respond": "~1.4.2",
-    "html5shiv": "~3.7.3"
+    "html5shiv": "~3.7.3",
+    "font-awesome": "^4.7.0"
   }
 }

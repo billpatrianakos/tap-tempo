@@ -9,6 +9,9 @@
  * middle, then mobile styles at the end.
  */
 
+// Normalize
+@import(css) '../vendor/normalize-css/normalize.css';
+
 ::selection { background: @orange; color: @white; }
 ::moz-selection { background: @orange; color: @white; }
 
@@ -26,6 +29,14 @@
 // ========
 // Import site modules and page-specific
 // overrides here.
+@import 'partials/header';
+@import 'partials/body';
+@import 'partials/footer';
+
+// Components
+// ==========
+// Individual component styles
+@import 'components/buttons'; // Button styles
 
 // Mobile styles
 // =============
