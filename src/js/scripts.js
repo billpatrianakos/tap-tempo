@@ -1,13 +1,18 @@
-var count         = 0,
-    firstTapTime  = 0,
-    prevTapTime   = 0;
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-function reset() {
-  count = 0;
-}
+ReactDOM.render(<h1>Hello whatever</h1>, document.getElementById('root'));
 
-function tapTempo(e) {
-  console.log('tapTempo started');
-}
+// var count         = 0,
+//     firstTapTime  = 0,
+//     prevTapTime   = 0;
+
+// function reset() {
+//   count = 0;
+// }
+
+// function tapTempo(e) {
+//   console.log('tapTempo started');
+// }
 
 // $(document).keypress()

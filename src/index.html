@@ -21,7 +21,7 @@
 </head>
 
 <body>
-
+<div id="root"></div>
   <main class="container">
     <section class="row-loose">
       <div class="col-8 push-4">
@@ -31,26 +31,22 @@
   </main>
 
   <footer class="container">
-    <div class="row-loose">
+    <div class="row">
       <div class="col-4">
-        <ul>
-          <li>
-            <a href="#" id="play" class="play-button fa fa-play" title="Play beat"></a>
-          </li>
-          <li>
-            <a href="#" id="help" class="fa fa-question-circle" title="Help and instructions"></a>
-          </li>
-          <li>
-            <a href="#" id="settings" class="fa fa-cogs"></a>
-          </li>
-        </ul>
+      <a href="#" id="play" title="Play beat"><i class="fa fa-play"></i></a>
       </div>
-      <div class="col-4"></div>
-      <div class="col-4"></div>
+      <div class="col-4">
+        <a href="#" id="help" title="Help and instructions"><i class="fa fa-question-circle"></i></a>
+      </div>
+      <div class="col-4">
+        <a href="#" id="settings"><i class="fa fa-cogs"></i></a>
+      </div>
     </div>
   </footer>
 
+  <div class="modal hidden"></div>
+
   <script src="/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="/js/scripts.js"></script>
+  <script src="/js/build.js"></script>
 </body>
 </html>
