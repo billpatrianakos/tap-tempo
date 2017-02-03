@@ -16,6 +16,7 @@
 # Dependencies
 node_modules/
 src/vendor/
+src/fonts
 
 ##
 # System files
@@ -34,3 +35,20 @@ dist/
 *.log
 src/grid.html
 .nvmrc
+*.sublime-workspace
+*.sublime-project
+*.chproj
+*.esproj
+
+# Folders
+.sass-cache
+
+
+# Individual Files
+#
+scratch.txt
+todo.txt
+
+# Build system ignores
+#
+dist/

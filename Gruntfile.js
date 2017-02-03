@@ -64,6 +64,16 @@ module.exports = function(grunt) {
         reporter: require('jshint-stylish')
       },
       dev: ['<%= project.dev %>/js/**/*.js']
+    },
+
+    // copy
+    copy: {
+      setup: {
+        expand: true,
+        cwd: '<%= project.dev %>/vendor/font-awesome/fonts/',
+        src: ['*.{otf,ttf,svg,eot,woff,woff2}'],
+        dest: '<%= project.dev %>/fonts/'
+      }
     }
   });
 
@@ -73,4 +83,6 @@ module.exports = function(grunt) {
     'connect:server',
     'watch'
     ]);
+
+  grunt.registerTask('setup', ['copy:setup']);
 };
