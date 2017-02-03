@@ -41,7 +41,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['<%= project.dev %>/js/**/*.js', 'Gruntfile.js'],
-        tasks: ['jshint:dev'],
+        tasks: ['webpack:build', 'jshint:dev'],
         options: {
           livereload: true,
           reload: true
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
       options: {
         reporter: require('jshint-stylish')
       },
-      dev: ['<%= project.dev %>/js/**/*.js']
+      dev: ['<%= project.dev %>/js/**/*.js', '<%= project.dev %>/js/scripts.js']
     },
 
     // copy
@@ -73,6 +73,31 @@ module.exports = function(grunt) {
         cwd: '<%= project.dev %>/vendor/font-awesome/fonts/',
         src: ['*.{otf,ttf,svg,eot,woff,woff2}'],
         dest: '<%= project.dev %>/fonts/'
+      }
+    },
+
+    // webpack
+    webpack: {
+      build: {
+        entry: ['./src/js/scripts.js'],
+        output: {
+          path: 'src/js/',
+          filename: 'build.js'
+        },
+        stats: {
+          colors: false,
+          modules: true,
+          reasons: true
+        },
+        storeStatsTo: 'webpackStats',
+        progress: true,
+        failOnError: true,
+        watch: true,
+        module: {
+          loaders: [
+            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+          ]
+        }
       }
     }
   });
