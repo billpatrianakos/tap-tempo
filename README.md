@@ -11,7 +11,8 @@ Getting started is easy. Just download or clone the repository, unzip, and start
 1. [Download the project](https://github.com/billpatrianakos/tap-tempo) or clone into a new folder with `git clone https://github.com/billpatrianakos/tap-tempo.git && cd tap-tempo`
 2. You'll need Grunt and Bower to use the included build tasks and resources. Install with `npm install -g bower grunt-cli`
 3. To use the build tasks install the required packages from npm with `npm install && bower install`
-4. Start up a local server by running `grunt develop` (or just `grunt` for those who like brevity)
+4. __First time users only__ should run `grunt setup`. This task copies font-awesome fonts into `src/fonts` and does some setup work so you don't have any missing dependencies.
+5. Start up a local server by running `grunt develop` (or just `grunt` for those who like brevity)
 
 MIT licensed so you can do whatever you please with it, mostly.
 
